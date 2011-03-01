@@ -1,0 +1,15 @@
+<h1> </h1>
+
+<% form_for(@double) do |f| %>
+  <%= f.error_messages %>
+  <p>  How many years will it take to double my money if it grows at an annual rate of <%= f.text_field :rate %> percent? <%= f.submit 'Create' %> </p>
+<% end %>
+
+
+<% form_for(@double) do |f| %>
+  <%= f.error_messages %>
+  <p>  What rate of return will I need to get on my money if I would like it to double in value after<%= f.text_field :time %> years? <%= f.submit 'Create' %> </p>
+<% end %>
+
+
+<%= link_to 'Back', doubles_path %>

@@ -1,0 +1,20 @@
+<h1>Editing double</h1>
+
+<% form_for(@double) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :rate %><br />
+    <%= f.text_field :rate %>
+  </p>
+  <p>
+    <%= f.label :time %><br />
+    <%= f.text_field :time %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @double %> |
+<%= link_to 'Back', doubles_path %>

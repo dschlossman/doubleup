@@ -1,0 +1,10 @@
+
+<% if @double.rate.nil? %>
+To double your money in <%= @double.time %> years, you would need to earn a <b> <%= @earning %> percent </b> annual return.
+<% else %>
+If you can invest your money at a rate of <%= @double.rate %> percent, your money will double every <b> <%= @double_years %> years.</b>
+<% end %>
+
+
+<%= link_to 'Edit', edit_double_path(@double) %> |
+<%= link_to 'Back', doubles_path %>

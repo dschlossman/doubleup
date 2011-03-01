@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rate: 1
+  time: 1
+
+two:
+  rate: 1
+  time: 1

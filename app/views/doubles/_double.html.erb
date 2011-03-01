@@ -1,0 +1,5 @@
+<% if double.rate.nil? %>
+<p>To double your money in <%= double.time %> years, you would need to earn a <b><%= 72/double.time unless double.time.nil? %> percent </b> annual return.</p>
+<% else %>
+<p>If you can invest your money at a rate of <%= double.rate %> percent, your money will double every <b> <%= 72/double.rate unless double.rate.nil? %> years.</b></p>
+<% end %>
